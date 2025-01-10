@@ -1,5 +1,5 @@
 async function fetchWeather(city){
-    const apiKey = apiKey;
+    const apiKey = import.meta.env.VITE_apiKey;
     const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&lang=fr&units=metric`
 
     let jsonWeather = null
