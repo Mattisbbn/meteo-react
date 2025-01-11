@@ -4,8 +4,8 @@ function dailyWeather(results){
     const cityName = results.weather.city.name
    
     return (
-        <div className='p-4'>
-            <h1 className='text-center'>{cityName}</h1>
+        <div className='p-4 d-flex flex-column align-items-center justify-content-center'>
+            <h1 className='text-center p-2'>{cityName}</h1>
             <p>Température : {actualWeather.main.temp} °C</p>
             <p>Pression : {actualWeather.main.pressure} hPa</p>
             <p>Vent : {actualWeather.wind.speed} km/h</p>
