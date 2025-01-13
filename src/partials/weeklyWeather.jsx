@@ -17,7 +17,6 @@ function WeeklyWeather(weather){
     }
     const sortedForecast = sortWeeklyForecast(weeklyForecast);
     const forecastArray = Object.entries(sortedForecast);
-    console.log(forecastArray);
   
     
     
@@ -28,7 +27,7 @@ function WeeklyWeather(weather){
     }
    
     return (
-        <div className="d-flex flex-wrap">
+        <div className="d-flex flex-wrap m-auto col-10">
             {forecastArray.map(([date, items]) => (
                 <div className="p-4" key={date}>
                     <h3 className="text-center">{date}</h3>
